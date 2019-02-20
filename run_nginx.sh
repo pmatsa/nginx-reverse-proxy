@@ -13,7 +13,7 @@ docker run -d \
     -e "SERVER1LETSENCRYPT_CERTIFICATES=true" \
     -e "SERVER1CERTIFICATE_FILE=/etc/letsencrypt/live/sub1.domain.com/cert.pem" \
     -e "SERVER1CERTIFICATE_KEY=/etc/letsencrypt/live/sub1.domain.com/privkey.pem" \
-    -e "SERVER1CERTIFICATE_TRUSTED=/etc/letsencrypt/sub1.domain.com/fullchain.pem" \
+    -e "SERVER1CERTIFICATE_TRUSTED=/etc/letsencrypt/live/sub1.domain.com/fullchain.pem" \
     -e "SERVER2REVERSE_PROXY_LOCATION1=/" \
     -e "SERVER2SERVER_NAME=portainer.auth.iotech.gr" \
     -e "SERVER2REVERSE_PROXY_PASS1=http://172.19.0.5:9000" \
